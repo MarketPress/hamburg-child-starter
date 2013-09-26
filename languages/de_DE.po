@@ -1,0 +1,1164 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: My Hamburg Child v1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+<<<<<<< HEAD
+"PO-Revision-Date: 2013-09-20 15:59:20+0000\n"
+"Last-Translator: \n"
+=======
+"PO-Revision-Date: 2013-09-19 20:18:02+0000\n"
+"Last-Translator: admin <frank@bueltge.de>\n"
+>>>>>>> child-starter
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+<<<<<<< HEAD
+#: woocommerce/cart/cart.php:29
+#@ theme_hamburg_textdomain
+msgid "Quantity"
+msgstr "Menge"
+
+#: comments.php:34
+#@ theme_hamburg_textdomain
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr "Dieser Beitrag ist mit einem Passwort geschützt. Bitte gib das Passwort ein, um die Kommentare zu lesen."
+
+#: comments.php:57
+#@ theme_hamburg_textdomain
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: comments.php:69
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "Comments title"
+msgid "One comment"
+msgid_plural "%1$s comments"
+msgstr[0] "Ein Kommentar"
+msgstr[1] "%1$s Kommentare"
+
+#: comments.php:165
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "Pingbacks title"
+msgid "One pingback"
+msgid_plural "%d pingbacks"
+msgstr[0] "Ein Pingback"
+msgstr[1] "%d Pingbacks"
+
+#: footer.php:40
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "Theme author link"
+msgid "A %1$s Theme"
+msgstr "Ein %1$s Theme"
+
+#: inc/class-Hamburg_Customize.php:52
+#@ theme_hamburg_textdomain
+msgid "Logo"
+msgstr "Logo"
+
+#: inc/class-Hamburg_Customize.php:94
+#@ theme_hamburg_textdomain
+msgid "Contact data"
+msgstr "Kontaktdaten"
+
+#: inc/class-Hamburg_Customize.php:120
+#@ theme_hamburg_textdomain
+msgid "First line: phone number, second line email."
+msgstr "Erste Zeile: Telefonnummer, zweite Zeile: E-Mail"
+
+#: functions.php:176
+#: functions.php:183
+#@ theme_hamburg_textdomain
+msgid "Phone"
+msgstr "Telefon"
+
+#: functions.php:188
+#@ theme_hamburg_textdomain
+msgid "E-Mail"
+msgstr "E-Mail"
+
+#: functions.php:366
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = paginate_links()"
+msgid "<span class=\"label\">Pages:</span> %s"
+msgstr "<span class=\"label\">Seiten:</span> %s"
+
+#: functions.php:517
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = category name"
+msgid "View all posts in %s"
+msgstr "Zeige alle Beiträge in %s"
+
+#: search.php:21
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "Section heading search results"
+msgid "Search results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: searchform.php:48
+#: woocommerce/hamburg-product-searchform.php:38
+#@ theme_hamburg_textdomain
+msgctxt "Search form submit button"
+msgid "Submit"
+msgstr "Senden"
+
+#: inc/comment.php:38
+#@ theme_hamburg_textdomain
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: inc/comment.php:47
+#@ theme_hamburg_textdomain
+msgid "Your comment is awaiting moderation."
+msgstr "Dein Kommentar wartet auf Moderation."
+
+#: inc/comment.php:65
+#@ theme_hamburg_textdomain
+msgid "Reply"
+msgstr "Antwort schreiben"
+
+#: inc/custom-header.php:195
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = theme name"
+msgid "Theme %s got brains! Custom Header options will be processed in the following order:"
+msgstr "Theme %s denkt mit! Benutzerdefinierte Kopfzeilen-Optionen werden in folgender Reihenfolge bearbeitet:"
+
+#: inc/custom-header.php:206
+#@ theme_hamburg_textdomain
+msgid "Header Text below is checked."
+msgstr "Kopfzeilentext unterhalb ist angehakt."
+
+#: inc/custom-header.php:213
+#@ theme_hamburg_textdomain
+msgid "If Header Text below is checked, blogname and description appear in the upper left corner of the menu bar fixed at the top."
+msgstr "Falls der Kopfzeilentext unterhalb angehakt ist, erscheinen der Name der Webseite und die Beschreibung oben links in der Ecke der am Beginn der Seite fixierten Menüleiste."
+
+#: inc/custom-header.php:223
+#@ theme_hamburg_textdomain
+msgid "Header Text is not checked."
+msgstr "Kopfzeilentext ist nicht angehakt."
+
+#: inc/custom-header.php:231
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "s% = link to Menus"
+msgid "If Header Text is not checked, that location is available as a custom menu location in %s; Primary Meta Menu, to be precise."
+msgstr "Falls der Kopfzelentext nicht angehakt ist, ist die Region für das benutzerdefinierte Menü verfügbar  in %s; Primäres Meta Menü, um genau zu sein."
+
+#: inc/custom-header.php:237
+#@ theme_hamburg_textdomain
+msgid "Menus"
+msgstr "Menüs"
+
+#: inc/custom-header.php:249
+#@ theme_hamburg_textdomain
+msgid "A Header Image is selected."
+msgstr "Ein Kopfzeilenbild ist ausgewählt"
+
+#: inc/custom-header.php:256
+#@ theme_hamburg_textdomain
+msgid "If you select a Header Image below, it does appear in your theme header, no matter what."
+msgstr "Wenn du ein Kopfzeilenbild unterhalb auswählst, erscheint es im Theme im Kopfzeilenbereich, komme was wolle."
+
+#: inc/custom-header.php:266
+#@ theme_hamburg_textdomain
+msgid "A Header Image is not selected."
+msgstr "Ein Kopfzeilenbild ist nicht ausgewählt."
+
+#: inc/custom-header.php:274
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = link to Customizer"
+msgid "If you don’t select (or de-select) a header image, the theme’s default header appears and the logo option becomes available %s."
+msgstr "Falls du kein Kopfzeilenbild auswählst (oder abwählst) erscheint die voreingestellte Kopfzeile und die Logo-Optionen werden verfügbar %s."
+
+#: inc/custom-header.php:280
+#@ theme_hamburg_textdomain
+msgctxt "before: \"logo option becomes available\""
+msgid "within the Customizer"
+msgstr "im Customizer"
+
+#: inc/setup.php:55
+#@ theme_hamburg_textdomain
+msgid "Primary Site Menu"
+msgstr "Primäres Seiten-Menü"
+
+#: inc/setup.php:56
+#@ theme_hamburg_textdomain
+msgid "Secondary Site Menu"
+msgstr "Sekundäres Seiten-Menü"
+
+#: inc/setup.php:57
+#@ theme_hamburg_textdomain
+msgid "Primary Meta Menu"
+msgstr "Primäres Meta-Menü"
+
+#: inc/setup.php:58
+#@ theme_hamburg_textdomain
+msgid "Secondary Meta Menu"
+msgstr "Sekundäres Meta-Menü"
+
+#: inc/widgets.php:17
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "The main sidebar"
+msgstr "Die Seitenleiste, wie du sie kennst."
+
+#: inc/widgets.php:29
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "Widget area at the top of the front page"
+msgstr "Widget-Bereich im Kopfbereich der Startseite"
+
+#: inc/widgets.php:36
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "Footer 1"
+msgstr "Fußbereich 1"
+
+#: inc/widgets.php:41
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "Footer widgets"
+msgstr "Widgets im Fußbereich der Seite"
+
+#: inc/widgets.php:48
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "Footer 2"
+msgstr "Fußbereich 2"
+
+#: inc/widgets.php:53
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "More footer widgets"
+msgstr "Mehr Widgets im Fußbereich der Seite"
+
+#: inc/widgets.php:60
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "Footer 3"
+msgstr "Fußbereich 3"
+
+#: inc/widgets.php:65
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "Even more footer widgets"
+msgstr "Noch mehr Widgets im Fußbereich der Seite"
+
+#: inc/widgets.php:77
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "Widgets on no result pages (404, searches)"
+msgstr "Widgets auf der Nichts-gefunden-Seite (404, Suche usw.)"
+
+#: inc/widgets.php:92
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "Widgets on WooCommerce shop pages"
+msgstr "Widgets auf WooCommerce Shop-Seiten"
+
+#: inc/woocommerce.php:169
+#@ theme_hamburg_textdomain
+msgctxt "WooCommerce breadcrumbs seperator"
+msgid "<span class=\"sep\"><span>/</span></span>"
+msgstr "<span class=\"sep\"><span>/</span></span>"
+
+#: inc/woocommerce.php:180
+#@ woocommerce
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr "Startseite"
+
+#: inc/inpsyde-theme-base/class-Inpsyde_Customizer_Textarea.php:38
+#@ default
+msgid "Default"
+msgstr "Standard"
+
+#: parts/entry-author-meta.php:21
+#@ theme_hamburg_textdomain
+msgctxt "Author info box heading prefix"
+msgid "Posted by"
+msgstr "Geschrieben von"
+
+#: functions.php:389
+#: parts/entry-content.php:19
+#@ theme_hamburg_textdomain
+msgctxt "More link text"
+msgid "Continue&#160;reading&#160;&#8230;"
+msgstr "Weiterlesen&#8230;"
+
+#: parts/entry-content.php:35
+#@ theme_hamburg_textdomain
+msgctxt "Prefix for content pagination"
+msgid "<span>Pages:</span>"
+msgstr "<span>Seiten:</span>"
+
+#: parts/entry-footer-meta.php:33
+#@ theme_hamburg_textdomain
+msgctxt "Prefix tag links"
+msgid "<footer class=\"entry-meta\"><span class=\"tag-links\"><span class=\"entry-utility-prep\">Tagged </span>"
+msgstr "<footer class=\"entry-meta\"><span class=\"tag-links\"><span class=\"entry-utility-prep\">Verschlagwortet </span>"
+
+#: parts/entry-header-meta.php:22
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "Prefix category links, %s = categroy list"
+msgid "<span class=\"entry-utility-prep\">Posted in: </span> %s"
+msgstr "<span class=\"entry-utility-prep\">Abgelegt in: </span> %s"
+
+#: parts/entry-header-meta.php:43
+#, php-format
+#@ theme_hamburg_textdomain
+msgid "View all posts by %s"
+msgstr "Zeige alle Beiträge von %s"
+
+#: parts/entry-header-meta.php:52
+#@ theme_hamburg_textdomain
+msgid "<span class=\"leave-reply\">Leave a reply</span>"
+msgstr "<span class=\"leave-reply\">Antworten</span>"
+
+#: parts/entry-header-meta.php:53
+#@ theme_hamburg_textdomain
+msgid "1 Reply"
+msgstr "1 Antwort"
+
+#: parts/entry-header-meta.php:54
+#@ theme_hamburg_textdomain
+msgid "% Replies"
+msgstr "% Antworten"
+
+#: parts/entry-header-meta.php:62
+#@ theme_hamburg_textdomain
+msgctxt "Edit link"
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: parts/navigation-breadcrumb.php:15
+#@ theme_hamburg_textdomain
+msgctxt "Breadcrumb title"
+msgid "You are here:"
+msgstr "Du bist hier: "
+
+#: parts/navigation-images.php:20
+#@ theme_hamburg_textdomain
+msgctxt "Image attachment navigation"
+msgid "Next image <span>&#8250;</span>"
+msgstr "Nächstes Bild <span>&#8250;</span>"
+
+#: parts/navigation-images.php:32
+#@ theme_hamburg_textdomain
+msgctxt "Image attachment navigation"
+msgid "<span>&#8249;</span> Previous image"
+msgstr "<span>&#8249;</span> Vorheriges Bild"
+
+#: parts/navigation-images.php:45
+#@ theme_hamburg_textdomain
+msgctxt "Image attachment navigation"
+msgid "Go back to post"
+msgstr "Zurück zum Beitrag"
+
+#: parts/navigation-site-primary.php:32
+#: parts/navigation-site-primary.php:34
+#@ theme_hamburg_textdomain
+msgid "Skip to content"
+msgstr "Springe zum Inhalt"
+
+#: parts/navigation-site-primary.php:65
+#@ theme_hamburg_textdomain
+msgctxt "Main menu toggle button title attribute"
+msgid "Toggle Menu"
+msgstr "Menü anzeigen"
+
+#: parts/navigation-site-primary.php:67
+#@ theme_hamburg_textdomain
+msgctxt "Main menu toggle button"
+msgid "Menu"
+msgstr "Menü"
+
+#: parts/navigation-up.php:18
+#@ theme_hamburg_textdomain
+msgctxt "Back to top link at the bottom"
+msgid "Take me higher"
+msgstr "Bring mich nach oben"
+
+#: parts/content-no-results.php:14
+#: woocommerce/loop/no-products-found.php:19
+#@ theme_hamburg_textdomain
+msgctxt "No-results template heading"
+msgid "Apologies, nothing found here."
+msgstr "Leider nichts gefunden hier."
+
+#: parts/content-no-results.php:44
+#@ theme_hamburg_textdomain
+msgctxt "Archives widget title"
+msgid "Monthly Archives"
+msgstr "Monats-Archive"
+
+#: parts/content-no-results.php:57
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = number of posts shown"
+msgid "%s Recent Posts"
+msgstr "%s neuste Beiträge"
+
+#: woocommerce/hamburg-widgets-teasers.php:25
+#@ theme_hamburg_textdomain
+msgctxt "Teaser heading on shop front page"
+msgid "Our Top 10"
+msgstr "Unsere Top 10"
+
+#: woocommerce/single-product-reviews.php:33
+#, php-format
+#@ woocommerce
+msgid "%s review for %s"
+msgstr "%s Bewertung für %s"
+
+#: woocommerce/single-product-reviews.php:42
+#@ default
+msgctxt "woocommerce"
+msgid "Reviews"
+msgstr "Erfahrungsberichte"
+
+#: inc/woocommerce.php:354
+#: woocommerce/single-product-reviews.php:45
+#: woocommerce/single-product-reviews.php:59
+#: woocommerce/single-product-reviews.php:64
+#, php-format
+#@ woocommerce
+msgid "Rated %s out of 5"
+msgstr "Bewertet mit %s von 5"
+
+#: inc/woocommerce.php:356
+#: woocommerce/single-product/review.php:30
+#: woocommerce/single-product-reviews.php:66
+#@ woocommerce
+msgid "out of 5"
+msgstr "von 5"
+
+#: woocommerce/single-product-reviews.php:66
+#@ theme_hamburg_textdomain
+msgctxt "WooCommerce average rating \"x out of y stars\" (nominative plural)"
+msgid "stars"
+msgstr "Sterne"
+
+#: woocommerce/single-product-reviews.php:74
+#: woocommerce/single-product-reviews.php:80
+#@ woocommerce
+msgid "Reviews"
+msgstr "Erfahrungsberichte"
+
+#: woocommerce/single-product-reviews.php:119
+#@ woocommerce
+msgid "Add Your Review"
+msgstr "Füge deinen Erfahrungsbericht hinzu"
+
+#: woocommerce/single-product-reviews.php:119
+#@ woocommerce
+msgid "Add Review"
+msgstr "Erfahrungsbericht einreichen"
+
+#: woocommerce/single-product-reviews.php:121
+#@ woocommerce
+msgid "Add a review"
+msgstr "Einen Erfahrungsbericht einreichen"
+
+#: woocommerce/single-product-reviews.php:125
+#@ woocommerce
+msgid "Be the first to review"
+msgstr "Sei der erste, der einen Erfahrungsbericht schreibt."
+
+#: woocommerce/single-product-reviews.php:127
+#@ woocommerce
+msgid "There are no reviews yet, would you like to <a href=\"#review_form\" class=\"inline show_review_form\">submit yours</a>?"
+msgstr "Es gibt bisher noch keine Erfahrungsberichte, willst du vielleicht <a href=\"#review_form\" class=\"inline show_review_form\">deinen einreichen</a>?"
+
+#: woocommerce/single-product-reviews.php:147
+#@ woocommerce
+msgid "Name"
+msgstr "Name"
+
+#: woocommerce/single-product-reviews.php:155
+#@ woocommerce
+msgid "Email"
+msgstr "E-Mail"
+
+#: woocommerce/single-product-reviews.php:162
+#@ woocommerce
+msgid "Submit Review"
+msgstr "Erfahrungsbericht senden"
+
+#: woocommerce/single-product-reviews.php:169
+#@ woocommerce
+msgid "Rating"
+msgstr "Bewertung"
+
+#: woocommerce/single-product-reviews.php:170
+#@ woocommerce
+msgid "Rate&hellip;"
+msgstr "Bewerten&hellip;"
+
+#: woocommerce/single-product-reviews.php:171
+#@ woocommerce
+msgid "Perfect"
+msgstr "Perfekt"
+
+#: woocommerce/single-product-reviews.php:172
+#@ woocommerce
+msgid "Good"
+msgstr "Gut"
+
+#: woocommerce/single-product-reviews.php:173
+#@ woocommerce
+msgid "Average"
+msgstr "durchschnittlich"
+
+#: woocommerce/single-product-reviews.php:174
+#@ woocommerce
+msgid "Not that bad"
+msgstr "nicht schlecht"
+
+#: woocommerce/single-product-reviews.php:175
+#@ woocommerce
+msgid "Very Poor"
+msgstr "armselig"
+
+#: woocommerce/single-product-reviews.php:180
+#@ woocommerce
+msgid "Your Review"
+msgstr "Dein Erfahrungsbericht"
+
+#: woocommerce/cart/cart.php:28
+#: woocommerce/checkout/form-pay.php:18
+#: woocommerce/checkout/review-order.php:21
+#@ theme_hamburg_textdomain
+#@ woocommerce
+msgid "Product"
+msgstr "Produkt"
+
+#: woocommerce/cart/cart.php:30
+#@ theme_hamburg_textdomain
+msgid "Price"
+msgstr "Preis"
+
+#: woocommerce/cart/cart.php:31
+#@ theme_hamburg_textdomain
+msgid "Subtotal"
+msgstr "Zwischensumme"
+
+#: woocommerce/cart/cart.php:65
+#@ woocommerce
+msgid "Available on backorder"
+msgstr "in Rückstand verfügbar"
+
+#: woocommerce/cart/cart.php:70
+#@ woocommerce
+msgid "Remove this item"
+msgstr "Entferne dieses Element"
+
+#: woocommerce/cart/cart.php:78
+#: woocommerce/cart/cart.php:133
+#@ woocommerce
+msgid "Update Cart"
+msgstr "Warenkorb aktualisieren"
+
+#: woocommerce/cart/cart.php:89
+#@ woocommerce
+msgctxt "Product quantity input tooltip"
+msgid "Qty"
+msgstr "Stk"
+
+#: woocommerce/cart/cart.php:97
+#@ theme_hamburg_textdomain
+msgid "Price:&#160;"
+msgstr "Preis:&#160;"
+
+#: woocommerce/cart/cart.php:106
+#@ theme_hamburg_textdomain
+msgid "Subtotal:&#160;"
+msgstr "Zwischensumme:&#160;"
+
+#: woocommerce/cart/cart.php:126
+#@ woocommerce
+msgid "Coupon"
+msgstr "Gutschein"
+
+#: woocommerce/cart/cart.php:126
+#: woocommerce/checkout/form-coupon.php:32
+#@ woocommerce
+msgid "Apply Coupon"
+msgstr "Gutschein anwenden"
+
+#: woocommerce/cart/cart.php:134
+#@ woocommerce
+msgid "Proceed to Checkout &rarr;"
+msgstr "Weiter zur Kasse &rarr;"
+
+#: woocommerce/cart/cross-sells.php:41
+#@ woocommerce
+msgid "You may be interested in&hellip;"
+msgstr "Vielleicht interessiert dich auch&hellip;"
+
+#: woocommerce/checkout/form-billing.php:13
+#: woocommerce/checkout/form-coupon.php:17
+#@ woocommerce
+msgid "Have a coupon?"
+msgstr "Hast du einen Gutschein?"
+
+#: woocommerce/checkout/form-billing.php:18
+#: woocommerce/checkout/form-coupon.php:22
+#@ woocommerce
+msgid "Click here to enter your code"
+msgstr "Klicke hier, um den Code einzugeben"
+
+#: woocommerce/checkout/form-billing.php:25
+#@ woocommerce
+msgid "Billing &amp; Shipping"
+msgstr "Rechnung &amp; Versand"
+
+#: woocommerce/checkout/form-billing.php:29
+#: woocommerce/myaccount/form-edit-address.php:22
+#@ woocommerce
+msgid "Billing Address"
+msgstr "Rechnungsadresse"
+
+#: woocommerce/checkout/form-billing.php:48
+#@ woocommerce
+msgid "Create an account?"
+msgstr "Ein Konto erstellen?"
+
+#: woocommerce/checkout/form-billing.php:57
+#@ woocommerce
+msgid "Create an account by entering the information below. If you are a returning customer please login at the top of the page."
+msgstr "Erstelle ein Konto, indem du unten die Informationen eingibst. Falls du schon registriert bist, kann du dich oben auf der Seite einloggen."
+
+#: woocommerce/checkout/form-checkout.php:19
+#@ woocommerce
+msgid "You must be logged in to checkout."
+msgstr "Bitte logge dich ein, um die Bestellung abschließen zu können."
+
+#: woocommerce/checkout/form-coupon.php:30
+#@ woocommerce
+msgid "Coupon code"
+msgstr "Gutschein-Code"
+
+#: woocommerce/checkout/form-pay.php:19
+#@ woocommerce
+msgid "Qty"
+msgstr "Stk"
+
+#: woocommerce/checkout/form-pay.php:20
+#@ woocommerce
+msgid "Totals"
+msgstr "Gesamtsumme"
+
+#: woocommerce/checkout/form-pay.php:82
+#@ woocommerce
+msgid "Sorry, it seems that there are no available payment methods for your location. Please contact us if you require assistance or wish to make alternate arrangements."
+msgstr "Entschuldigung, aber es sind keine Zahlungsarten für dein Land verfügbar. Bitte kontaktiere uns für weitere Hilfe oder wenn du alternative Absprachen treffen möchtest."
+
+#: woocommerce/checkout/form-pay.php:91
+#@ woocommerce
+msgid "Pay for order"
+msgstr "Für Bestellung bezahlen"
+
+#: woocommerce/checkout/review-order.php:16
+#@ woocommerce
+msgid "Your order"
+msgstr "Deine Bestellung"
+
+#: woocommerce/checkout/review-order.php:22
+#@ woocommerce
+msgid "Total"
+msgstr "Gesamtsumme"
+
+#: woocommerce/checkout/review-order.php:27
+#@ woocommerce
+msgid "Cart Subtotal"
+msgstr "Warenkorb Zwischensumme"
+
+#: woocommerce/checkout/review-order.php:34
+#@ woocommerce
+msgid "Cart Discount"
+msgstr "Warenkorb Rabatt"
+
+#: woocommerce/checkout/review-order.php:45
+#@ woocommerce
+msgid "Shipping"
+msgstr "Versand"
+
+#: woocommerce/checkout/review-order.php:81
+#@ woocommerce
+msgid "Order Discount"
+msgstr "Rabatt auf Bestellung"
+
+#: woocommerce/checkout/review-order.php:90
+#@ woocommerce
+msgid "Order Total"
+msgstr "Gesamtsumme der Bestellung"
+
+#: woocommerce/checkout/review-order.php:103
+#, php-format
+#@ woocommerce
+msgid "(Includes %s)"
+msgstr "(Enthält %s)"
+
+#: woocommerce/checkout/review-order.php:145
+#@ theme_hamburg_textdomain
+msgid "Payment Methods"
+msgstr "Zahlungsmethoden"
+
+#: woocommerce/checkout/review-order.php:184
+#@ woocommerce
+msgid "Please fill in your details above to see available payment methods."
+msgstr "Bitte fülle die Details oberhalb ein, um die Zahlungsmethoden zu sehen."
+
+#: woocommerce/checkout/review-order.php:186
+#@ woocommerce
+msgid "Sorry, it seems that there are no available payment methods for your state. Please contact us if you require assistance or wish to make alternate arrangements."
+msgstr "Entschuldigung, aber es sind keine Zahlungsarten für dein Bundesland/Region verfügbar. Bitte kontaktiere uns für weitere Hilfe oder wenn du alternative Absprachen treffen möchtest."
+
+#: woocommerce/checkout/review-order.php:198
+#@ woocommerce
+msgid "Since your browser does not support JavaScript, or it is disabled, please ensure you click the <em>Update Totals</em> button before placing your order. You may be charged more than the amount stated above if you fail to do so."
+msgstr "Sollte dein Browser kein JavaScript unterstützen, oder wenn dieses deaktiviert wurde, stelle bitte sicher, das du den Button <em>Gesamtbetrag aktualisieren</em> klickst, bevor du deine Bestellung abschickst. Wenn du das nicht tust, könnte es möglich sein, das du mehr bezahlen müssest, als oben angegeben ist."
+
+#: woocommerce/checkout/review-order.php:198
+#@ woocommerce
+msgid "Update totals"
+msgstr "Gesamtsumme aktualisieren"
+
+#: woocommerce/checkout/review-order.php:205
+#@ woocommerce
+msgid "Place order"
+msgstr "Bestellung abschicken"
+
+#: woocommerce/checkout/review-order.php:212
+#@ woocommerce
+msgid "I have read and accept the"
+msgstr "Gelesen und akzeptiert"
+
+#: woocommerce/checkout/review-order.php:212
+#@ woocommerce
+msgid "terms &amp; conditions"
+msgstr "Liefer- und Zahlungsbedingungen (AGB)"
+
+#: woocommerce/single-product/related.php:42
+#@ woocommerce
+msgid "Related Products"
+msgstr "Ähnliche Produkte"
+
+#: woocommerce/single-product/review.php:29
+#, php-format
+#@ woocommerce
+msgid "Rated %d out of 5"
+msgstr "Bewertet mit %d von 5"
+
+#: woocommerce/single-product/review.php:37
+#@ woocommerce
+msgid "Your comment is awaiting approval"
+msgstr "Dein Kommentar wartet auf Freischaltung"
+
+#: woocommerce/single-product/review.php:47
+#@ woocommerce
+msgid "verified owner"
+msgstr "Verifizierter Besitzer"
+
+#: woocommerce/single-product/up-sells.php:41
+#@ woocommerce
+msgid "You may also like&hellip;"
+msgstr "Du magst vielleicht auch&hellip;"
+
+#: functions.php:22
+#@ theme_hamburg_textdomain
+msgid "The license has been deleted."
+msgstr "Lizenz gelöscht."
+
+#: functions.php:26
+#@ theme_hamburg_textdomain
+msgid "Product successfully activated."
+msgstr "Produkt erfolgreich aktiviert."
+
+#: functions.php:46
+#@ theme_hamburg_textdomain
+msgid "Activate"
+msgstr "Aktivieren"
+
+#: functions.php:55
+#@ theme_hamburg_textdomain
+msgid "The auto-update has been deactivated."
+msgstr "Das Auto-Update ist deaktiviert."
+
+#: functions.php:58
+#@ theme_hamburg_textdomain
+msgid "Please enter a valid license key."
+msgstr "Bitte gib einen gültigen Lizenzschlüssel ein."
+
+#: functions.php:61
+#@ theme_hamburg_textdomain
+msgid "You can renew the key in your MarketPress Dashboard."
+msgstr "Du kannst den Lizenzschlüssel in deinem MarketPress-Dashboard erneuern."
+
+#: functions.php:64
+#@ theme_hamburg_textdomain
+msgid "You can enter a new key in the form below."
+msgstr "Du kannst einen neuen Lizenzschlüssel in das Formular eingeben."
+
+#: functions.php:67
+#@ theme_hamburg_textdomain
+msgid "Delete key."
+msgstr "Lizenzschlüssel löschen."
+
+#: functions.php:70
+#@ theme_hamburg_textdomain
+msgid "License key:"
+msgstr "Lizenzschlüssel:"
+
+#: inc/class-Hamburg_Customize.php:141
+#@ theme_hamburg_textdomain
+msgid "Color scheme"
+msgstr "Farbschema"
+
+#: inc/class-Hamburg_Customize.php:197
+#@ theme_hamburg_textdomain
+msgctxt "Color scheme picker"
+msgid "Blue"
+msgstr "Blau"
+
+#: inc/class-Hamburg_Customize.php:202
+#@ theme_hamburg_textdomain
+msgctxt "Color scheme picker"
+msgid "Yellow"
+msgstr "Gelb"
+
+#: inc/class-Hamburg_Customize.php:207
+#@ theme_hamburg_textdomain
+msgctxt "Color scheme picker"
+msgid "Dark"
+msgstr "Dunkel"
+
+#: inc/inpsyde-theme-base/class-Inpsyde_Recent_Comments.php:23
+#@ theme_hamburg_textdomain
+msgid "The most recent comments for selected post types"
+msgstr "Letzte Kommentare für ausgewählte Post Types"
+
+#: inc/inpsyde-theme-base/class-Inpsyde_Recent_Comments.php:29
+#: inc/inpsyde-theme-base/class-Inpsyde_Recent_Comments.php:60
+#@ theme_hamburg_textdomain
+msgid "Recent Comments"
+msgstr "Letzte Kommentare"
+
+#. translators: comments widget: 1: comment author, 2: post link
+#: inc/inpsyde-theme-base/class-Inpsyde_Recent_Comments.php:93
+#, php-format
+#@ default
+msgctxt "widgets"
+msgid "%1$s on %2$s"
+msgstr ""
+
+#: inc/inpsyde-theme-base/class-Inpsyde_Recent_Comments.php:134
+#@ default
+msgid "Title:"
+msgstr ""
+
+#: inc/inpsyde-theme-base/class-Inpsyde_Recent_Comments.php:137
+#@ default
+msgid "Number of comments to show:"
+msgstr ""
+
+#: inc/inpsyde-theme-base/class-Inpsyde_Recent_Comments.php:140
+#@ theme_hamburg_textdomain
+msgid "Post types"
+msgstr "Post Types"
+
+#: functions.php:360
+#: inc/setup.php:236
+#: inc/setup.php:252
+#: parts/pagination-comments.php:21
+#: woocommerce/loop/pagination.php:33
+#: woocommerce/single-product-reviews.php:111
+#@ theme_hamburg_textdomain
+msgid "Next"
+msgstr "Nächste"
+
+#: functions.php:356
+#: inc/setup.php:237
+#: inc/setup.php:253
+#: parts/pagination-comments.php:17
+#: woocommerce/loop/pagination.php:29
+#: woocommerce/single-product-reviews.php:101
+#@ theme_hamburg_textdomain
+msgid "Previous"
+msgstr "Vorherige"
+
+#: inc/widgets.php:12
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "Blog Sidebar"
+msgstr "Blog-Sidebar"
+
+#: inc/widgets.php:24
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "Front Page Banner"
+msgstr "Startseite: Banner"
+
+#: inc/widgets.php:72
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "No Results Page"
+msgstr "Nichts-gefunden-Seite"
+
+#: inc/widgets.php:87
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "Shop Sidebar"
+msgstr "Shop-Sidebar"
+
+#: inc/widgets.php:99
+#@ theme_hamburg_textdomain
+msgctxt "Widget area name in wp-admin/widgets.php"
+msgid "Shop Front Page Teasers"
+msgstr "Shop-Startseite: Teasers"
+
+#: inc/widgets.php:104
+#@ theme_hamburg_textdomain
+msgctxt "Widget area description in wp-admin/widgets.php"
+msgid "Widget area in the middle of the shop front page"
+msgstr "Widget-Bereich in der Mitte der Shop-Startseite"
+
+#: inc/woocommerce-german-market.php:117
+#@ theme_hamburg_textdomain
+msgid "versandkostenfrei"
+msgstr "Versandkostenfrei"
+
+#: inc/woocommerce-german-market.php:124
+#@ theme_hamburg_textdomain
+msgid "zzgl."
+msgstr "zzgl."
+
+#: inc/woocommerce-german-market.php:125
+#@ theme_hamburg_textdomain
+msgid "Versand"
+msgstr "Versand"
+
+#: parts/content-no-results.php:28
+#@ theme_hamburg_textdomain
+msgctxt "No-results template text (not only 404, but also searches!)"
+msgid "No posts or pages found which match your selection."
+msgstr "Keine Beiträge oder Seiten zu dieser Anfrage gefunden."
+
+#: woocommerce/loop/no-products-found.php:30
+#@ theme_hamburg_textdomain
+msgctxt "No-results template for products (not only 404, but also searches!)"
+msgid "No products found which match your selection."
+msgstr "Keine Produkte zu dieser Anfrage gefunden."
+
+#: woocommerce/myaccount/form-edit-address.php:22
+#@ woocommerce
+msgid "Shipping Address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:42
+#@ woocommerce
+msgid "Save Address"
+msgstr ""
+
+#: woocommerce/single-product-reviews.php:50
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "WooCommerce star rating average"
+msgid "%s out of 5"
+msgstr "%s von 5"
+
+#: woocommerce/loop/pagination.php:18
+#@ theme_hamburg_textdomain
+msgid "Products"
+msgstr "Produkte"
+
+#: functions.php:30
+#@ theme_hamburg_textdomain
+msgid "The entered license key is not valid."
+msgstr "Der eigegebene Lizenzschlüssel ist ungülitg."
+
+#: functions.php:34
+#@ theme_hamburg_textdomain
+msgid "You have reached the limit of URLs. Please update your license at <a href=\"http://marketpress.com\">MarketPress.com</a>."
+msgstr "Du hast dein Limit von URLs erreicht. Bitte aktualisiere deine Lizenz bei  <a href=\"http://marketpress.com\">MarketPress.com</a>."
+
+#: functions.php:38
+#@ theme_hamburg_textdomain
+msgid "Something went wrong. Please try again later or contact the <a href=\"http://marketpress.com/support/\">MarketPress team</a>."
+msgstr "Etwas ist schief gelaufen. Bitte versuche es später noch einmal, oder kontaktiere das <a href=\"http://marketpress.com/support/\">MarketPress-Team</a>."
+
+#: functions.php:42
+#@ theme_hamburg_textdomain
+msgid "Due to an invalid license you are not allowed to activate this theme. Please update your license at <a href=\"http://marketpress.com\">MarketPress.com</a>."
+msgstr "Wegen eines ungültigen Lizenzschlüssels kannst du dieses Theme nicht aktivieren. Bitte aktualisiere deine Lizenz bei <a href=\"http://marketpress.com\">MarketPress.com</a>."
+
+#: functions.php:49
+#@ theme_hamburg_textdomain
+msgid "Your license for theme Hamburg is not valid."
+msgstr "Dein Lizenzschlüssel für Theme Hamburg ist nicht gültig."
+
+#: functions.php:52
+#@ theme_hamburg_textdomain
+msgid "Your license for theme Hamburg is valid."
+msgstr "Dein Lizenzschlüssel für Theme Hamburg ist gültig."
+
+#: comments.php:87
+#@ theme_hamburg_textdomain
+msgid "Comment navigation"
+msgstr "Kommentar-Navigation"
+
+#: functions.php:714
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = social network name"
+msgid "Share on %s"
+msgstr "Teilen bei %s"
+
+#: woocommerce/single-product/meta.php:23
+#@ woocommerce
+msgid "SKU:"
+msgstr ""
+
+#: woocommerce/single-product/meta.php:28
+#@ woocommerce
+msgid "Category:"
+msgid_plural "Categories:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: woocommerce/single-product/meta.php:31
+#@ woocommerce
+msgid "Tag:"
+msgid_plural "Tags:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: functions.php:763
+#@ default
+msgid "Pages"
+msgstr ""
+
+#: functions.php:313
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = wp-admin/nav-menus.php"
+msgid "Please <a href=\"%s\">create a custom menu</a> and assign it to one of the available menu locations."
+msgstr "Bitte <a href=\"%s\">erstelle ein eigenes Menü</a> und platziere es an einem der verfügbaren Menü-Standorte."
+
+#: inc/comment.php:30
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "1: date, 2: time for comment meta"
+msgid "%1$s @ %2$s"
+msgstr "%1$s @ %2$s"
+
+#: functions.php:308
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = current user display name"
+msgid "Ahoy, %s!"
+msgstr "Ahoi, %s!"
+
+#: searchform.php:34
+#@ theme_hamburg_textdomain
+msgctxt "Search field label (ellipsis)"
+msgid "Find&#8230;"
+msgstr "Finden&#8230;"
+
+#: woocommerce/hamburg-product-searchform.php:34
+#@ theme_hamburg_textdomain
+msgctxt "Search field label (ellipsis)"
+msgid "Find products&#8230;"
+msgstr "Produkte finden&#8230;"
+
+#: inc/custom-header.php:190
+#@ theme_hamburg_textdomain
+msgid "Achtung!"
+msgstr "Aufgepasst!"
+
+#: inc/custom-header.php:293
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "%s = docs URL"
+msgid "Please visit the <a href=\"%s\">Hamburg theme documentation</a> for further details on all things header."
+msgstr "Bitte besuche die <a href=\"%s\">Hamburg Theme-Dokumentation</a> für weitere Details zu allen Kopfzeilen-Optionen."
+
+#: functions.php:808
+#, php-format
+#@ theme_hamburg_textdomain
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: inc/class-DS_WP_Breadcrumb.php:71
+#@ theme_hamburg_textdomain
+msgctxt "breadcrumb nav prefix"
+msgid "Startseite"
+msgstr "Home"
+
+#: inc/class-DS_WP_Breadcrumb.php:73
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "breadcrumb nav prefix"
+msgid "Ein Suchergebnis zu <em>%s</em>"
+msgstr "One result for <em>%s</em>"
+
+#: inc/class-DS_WP_Breadcrumb.php:74
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "breadcrumb nav prefix"
+msgid "%s Suchergebnisse zu <em>%s</em>"
+msgstr "%s results for <em>%s</em>"
+
+#: inc/class-DS_WP_Breadcrumb.php:76
+#, php-format
+#@ theme_hamburg_textdomain
+msgctxt "breadcrumb nav prefix"
+msgid "Seite %d"
+msgstr "Page %d"
+
+#: inc/class-DS_WP_Breadcrumb.php:77
+#@ theme_hamburg_textdomain
+msgctxt "breadcrumb nav prefix"
+msgid "Fehler: Seite existiert nicht"
+msgstr "Error: page does not exist"
+=======
+#: functions.php:97
+#@ theme_hamburg_child_textdomain
+msgctxt "Color scheme picker"
+msgid "Pink"
+msgstr "Rosa"
+>>>>>>> child-starter
+
+#: page-fullwidth.php:8
+#@ theme_hamburg_textdomain
+msgid "Full Width"
+msgstr "Volle Breite"
+
+#: page-sidebar-left.php:8
+#@ theme_hamburg_textdomain
+msgid "Sidebar Left"
+msgstr "Seitenleiste links"
+
