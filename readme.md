@@ -14,10 +14,11 @@ This starter kit uses our own theme [Hamburg](http://marketpress.com/product/ham
 
 ## Contributors
 
-* @inpsyde
-* @bueltge
-* @glueckpress
-* @toscho
+* [@inpsyde](https://github.com/inpsyde)
+* [@bueltge](https://github.com/bueltge)
+* [@glueckpress](https://github.com/glueckpress)
+* [@toscho](https://github.com/toscho)
 
-Brought to you via
+**Brought to you via**
+
 [![MarketPress.com](/assets/img/mp-logo.png)](http://marketpress.com)
