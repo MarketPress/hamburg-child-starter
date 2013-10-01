@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: My Hamburg Child v1.0\n"
+"Project-Id-Version: Hamburg Child v1.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 <<<<<<< HEAD

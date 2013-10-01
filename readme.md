@@ -1,12 +1,20 @@
 # Hamburg Child Starter
 
 ## Description
-With version 3.0 of WordPress, the much anticipated feature of Child Themes 
-was integrated or some might say it was improved, since it was actually possible 
-to use it. We like to show you an example based on the 
-Theme [Hamburg](http://marketpress.com/product/hamburg/) how you use it.
+This is a starter kit for a custom Child Theme. Child Themes in WordPress enable you to override theme templates and stylesheets with your own customizations in a safe way. No need to touch an original theme file!
 
-See also the online documentation from Hamburg.
 
- * [Documentation](http://marketpress.com/documentation/theme-hamburg/)
- * [Child Themes: customize CSS and templates](http://marketpress.com/documentation/theme-hamburg/child-themes-customize-css-and-templates/)
+This starter kit uses our own theme [Hamburg](http://marketpress.com/product/hamburg/) as the Parent Theme. Feel free to use it for your own projects, or hack it and create your own Child Theme starter-kit.
+
+## Ressources
+
+* [The WordPress Codex on Child Themes](http://codex.wordpress.org/Child_Themes)
+* [Hamburg Theme Documentation](http://marketpress.com/documentation/theme-hamburg/)
+* [Tutorial on Child Themes (DE)](https://marketpress.de/?p=15176)
+
+## Contributors
+
+@inpsyde, @bueltge, @glueckpress, @toscho
+
+Brought to you via
+![MarketPress.com](/assets/img/mp-logo.png)
