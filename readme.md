@@ -1,5 +1,7 @@
 # Hamburg Child Starter
 
+A Child Theme starter kit for WordPress.
+
 ## Description
 This is a starter kit for a custom Child Theme. Child Themes in WordPress enable you to override theme templates and stylesheets with your own customizations in a safe way. No need to touch an original theme file!
 
