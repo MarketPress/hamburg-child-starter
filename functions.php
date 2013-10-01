@@ -1,6 +1,6 @@
 <?php
 /**
- * Functions and definitions for Hamburg Child
+ * Functions and definitions for Hamburg Child.
  *
  * @package    WordPress
  * @subpackage Hamburg_Child
@@ -15,7 +15,7 @@ add_action( 'after_setup_theme', 'hamburg_child_setup' );
  *
  * Note that this function is hooked into the after_setup_theme hook, which runs
  * before the init hook. The init hook is too late for some features, such as indicating
- * support post thumbnails.
+ * support for post thumbnails.
  *
  * @since   09/19/2013
  * @return  void
@@ -34,7 +34,7 @@ function hamburg_child_setup() {
 
 
 /**
- * Enqueue my styles for front-end
+ * Enqueue my styles for front-end.
  * Also usable for scripts
  *
  * @since   09/19/2013
@@ -42,7 +42,7 @@ function hamburg_child_setup() {
  */
 function hamburg_child_add_stylesheets() {
 
-	// If no pink is used, then return
+	// If no pink is used return
 	if ( 'pink' !== get_theme_mod( 'color_scheme' ) )
 		return NULL;
 
@@ -55,7 +55,7 @@ function hamburg_child_add_stylesheets() {
 	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 	/**
-	 * Register CSS style file
+	 * Register CSS style file.
 	 *
 	 * @param string $handle Name of the stylesheet.
 	 * @param string|bool $src Path to the stylesheet from the root directory of WordPress. Example: '/assets/style.css'.
@@ -78,8 +78,8 @@ function hamburg_child_add_stylesheets() {
 }
 
 /**
- * Add color scheme to the default color schemes from theme Hamburg
- * Remove the default color 'yellow' from settings
+ * Add color scheme to the default color schemes from theme Hamburg.
+ * Remove the default color 'yellow' from settings.
  *
  * @since   09/19/2013
  * @param   Array with each color and his data
