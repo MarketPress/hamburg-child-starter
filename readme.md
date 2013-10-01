@@ -1,12 +1,12 @@
 # Hamburg Child Starter
 
-A Child Theme starter kit for WordPress.
+A child theme starter kit for WordPress.
 
 ## Description
-This is a starter kit for a custom Child Theme. Child Themes in WordPress enable you to override theme templates and stylesheets with your own customizations in a safe way. No need to touch an original theme file!
+This is a starter kit for a custom child theme. Child themes in WordPress enable you to override theme templates and stylesheets with your own customizations in a safe way. No need to touch an original theme file!
 
 
-This starter kit uses our own theme [Hamburg](http://marketpress.com/product/hamburg/) as the Parent Theme. Feel free to use it for your own projects, or hack it and create your own Child Theme starter-kit.
+This starter kit uses our own theme [Hamburg](http://marketpress.com/product/hamburg/) as the parent theme. Feel free to use it for your own projects, or hack it and create your own child theme starter kit.
 
 ## Ressources
 
