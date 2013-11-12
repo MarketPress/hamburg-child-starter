@@ -12,7 +12,8 @@ This starter kit uses our own theme [Hamburg](http://marketpress.com/product/ham
 
 * [The WordPress Codex on Child Themes](http://codex.wordpress.org/Child_Themes)
 * [Hamburg Theme Documentation](http://marketpress.com/documentation/theme-hamburg/)
-* [Tutorial on Child Themes (DE)](https://marketpress.de/?p=15176)
+* [Tutorial on Child Themes (DE)](http://marketpress.de/2013/child-theme-erstellen-anpassen/)
+* [Tutorial on Child Themes (EN)](http://marketpress.com/2013/creating-customizing-child-themes)
 
 ## Contributors
 
