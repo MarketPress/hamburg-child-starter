@@ -5,8 +5,15 @@ A child theme starter kit for WordPress.
 ## Description
 This is a starter kit for a custom child theme. Child themes in WordPress enable you to override theme templates and stylesheets with your own customizations in a safe way. No need to touch an original theme file!
 
-
 This starter kit uses our own theme [Hamburg](http://marketpress.com/product/hamburg/) as the parent theme. Feel free to use it for your own projects, or hack it and create your own child theme starter kit.
+
+As a bonus for Hamburg users, we have added a second stylesheet which supports styling for WooCommerce elements. The child theme will now
+
+* check if WooCommerce is active;
+* if yes, load *style.plus.woo.css*;
+* if not, load the smaller *style.css*.
+
+Also, as in Hamburg and many other themes, minified stylesheets are loaded by default. To load the extended files, set `SCRIPT_DEBUG` to `TRUE` in your *wp-config.php*.
 
 ## Ressources
 
@@ -22,6 +29,17 @@ This starter kit uses our own theme [Hamburg](http://marketpress.com/product/ham
 * [@glueckpress](https://github.com/glueckpress)
 * [@toscho](https://github.com/toscho)
 
-**Brought to you via**
+**Brought to you by**
 
 [![MarketPress.com](/assets/img/mp-logo.png)](http://marketpress.com)
+
+## Changelog
+
+### 1.1
+
+* Updated sample color scheme matching Hamburg 1.1.x.
+* Added WooCommerce supporting stylesheet.
+
+### 1.0
+
+* Initial release.
