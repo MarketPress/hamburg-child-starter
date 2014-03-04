@@ -52,7 +52,8 @@ function hamburg_child_add_stylesheets() {
 	 * Adds a conditional ".min" suffix to the file name
 	 * when SCRIPT_DEBUG is NOT set to TRUE.
 	 */
-	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	$suffix  = class_exists( 'WooCommerce' ) ? '.plus.woo' : '';
+	$suffix .= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? $suffix : $suffix . '.min';
 
 	/**
 	 * Register CSS style file.
