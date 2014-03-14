@@ -53,7 +53,7 @@ function hamburg_child_add_stylesheets() {
 	 * when SCRIPT_DEBUG is NOT set to TRUE.
 	 */
 	$suffix  = class_exists( 'WooCommerce' ) ? '.plus.woo' : '';
-	$suffix .= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? $suffix : $suffix . '.min';
+	$suffix .= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 	/**
 	 * Register CSS style file.
