@@ -167,3 +167,8 @@
 		background-color: #cc5490;
 	}
 }
+
+/* IE8 */
+.lte8 .color-scheme-pink .site-nav-primary .menu ul {
+	background-color: #cc5490;
+}
