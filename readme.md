@@ -19,7 +19,7 @@ Also, as in Hamburg and many other themes, minified stylesheets are loaded by de
 
 * [The WordPress Codex on Child Themes](http://codex.wordpress.org/Child_Themes)
 * [Hamburg Theme Documentation](http://marketpress.com/documentation/theme-hamburg/)
-* [Child-Theme erstellen und anpassen (DE)](http://marketpress.de/2013/child-theme-erstellen-anpassen/)
+* [Child-Theme erstellen und anpassen (DE)](http://make.marketpress.com/themes/child-themes-erstellen-anpassen/)
 * [Tutorial on Child Themes (EN)](http://marketpress.com/2013/creating-customizing-child-themes)
 
 ## Contributors
