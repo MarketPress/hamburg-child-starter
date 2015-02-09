@@ -2,20 +2,44 @@
 /**
  * Functions and definitions for Hamburg Child.
  *
+ * Edit hamburg_child_min_suffix() and hamburg_child_setup() to unlock features.
+ *
  * @package    WordPress
  * @subpackage Hamburg_Child
- * @version    09/19/2013
+ * @version    02/09/2015
  * @author     marketpress.com
  */
 
-add_action( 'after_setup_theme', 'hamburg_child_setup' );
+
 /**
- * Sets up theme defaults and registers support for various WordPress features
- * of Hamburg Child Theme.
+ * The .min suffix for stylesheets and scripts.
  *
- * Note that this function is hooked into the after_setup_theme hook, which runs
- * before the init hook. The init hook is too late for some features, such as indicating
- * support for post thumbnails.
+ * In order to provide a quick start, this child theme by default will load
+ * regular CSS and javascript files (whereas its parent theme Hamburg loads
+ * minified versions of its stylesheets and scripts by default).
+ *
+ * If you want your child theme to default on minified stylesheets as well,
+ * just uncomment the line where SCRIPT_DEBUG is defined.
+ * Don’t forget to actually add applicable .min files to your child theme first!
+ *
+ * You can then temporarily switch back to unminified versions of the same
+ * files by setting the constant SCRIPT_DEBUG to TRUE in your wp-config.php:
+ * define( 'SCRIPT_DEBUG', TRUE );
+ *
+ * @since   02/09/2015
+ * @return void
+ */
+function hamburg_child_min_suffix( $suffix = '' ) {
+
+	// Uncomment to load minified stylesheet by default
+	// $suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
+	return $suffix;
+}
+
+
+/**
+ * Sets up theme defaults, enqeues stylesheet and scripts.
  *
  * @since   09/19/2013
  * @return  void
@@ -25,64 +49,129 @@ function hamburg_child_setup() {
 	// Loads the child theme's translated strings
 	load_child_theme_textdomain( 'theme_hamburg_child_textdomain', get_stylesheet_directory() . '/languages' );
 
-	// Enqueue child theme's styles.css for front-end.
-	add_action( 'wp_enqueue_scripts', 'hamburg_child_add_stylesheets' );
+	// Adds a custom footer line.
+	add_filter( 'hamburg_site_footer_info', 'hamburg_child_custom_footer_text' );
 
-	// Change default color scheme
-	add_filter( get_stylesheet() . '_color_schemes', 'hamburg_child_add_color_scheme' );
+	// Enqueue child theme's styles.css for front-end.
+	add_action( 'wp_enqueue_scripts', 'hamburg_child_add_stylesheet' );
+
+	// Uncomment to enqueue child theme's javascript for front-end.
+	// add_action( 'wp_enqueue_scripts', 'hamburg_child_add_javascript' );
+
+	// Uncomment to remove yellow color-scheme and add pink.
+	// add_filter( get_stylesheet() . '_color_schemes', 'hamburg_child_add_color_scheme' );
+}
+add_action( 'after_setup_theme', 'hamburg_child_setup' );
+
+
+/**
+ * Replace Hamburg theme footer text with custom text.
+ *
+ * @since   10/01/2013
+ * @hooked  hamburg_site_footer_info
+ * @return  string
+ */
+function hamburg_child_custom_footer_text() {
+    return sprintf(
+    		'<p class="site-info">Custom footer here, including a <a href="%s" rel="nofollow">link</a>. (Edit this line in functions.php.)</p>',
+    		home_url( '/' )
+    		);
 }
 
 
 /**
- * Enqueue my styles for front-end.
- * Also usable for scripts
+ * Enqueues main stylesheet in the front-end.
+ *
+ * Will load after main parent stylesheet has loaded. To remove that dependency,
+ * pass an empty array() instead of array( 'style' ).
  *
  * @since   09/19/2013
+ * @hooked  wp_enqueue_scripts
  * @return  void
  */
-function hamburg_child_add_stylesheets() {
+function hamburg_child_add_stylesheet() {
 
-	// If no pink is used return
-	if ( 'pink' !== get_theme_mod( 'color_scheme' ) )
-		return NULL;
+	// Get file suffix.
+	$suffix  = hamburg_child_min_suffix();
 
-	/**
-	 * Suffix for minified script/stylesheet versions.
-	 *
-	 * Adds a conditional ".min" suffix to the file name
-	 * when SCRIPT_DEBUG is NOT set to TRUE.
-	 */
-	$suffix  = class_exists( 'WooCommerce' ) ? '.plus.woo' : '';
-	$suffix .= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	// Get theme-data.
+	$theme_data = wp_get_theme();
 
 	/**
 	 * Register CSS style file.
 	 *
-	 * @param string $handle Name of the stylesheet.
-	 * @param string|bool $src Path to the stylesheet from the root directory of WordPress. Example: '/assets/style.css'.
-	 * @param array $deps Array of handles of any stylesheet that this stylesheet depends on.
-	 *  (Stylesheets that must be loaded before this stylesheet.) Pass an empty array if there are no dependencies.
-	 * @param string|bool $ver String specifying the stylesheet version number. Set to null to disable.
-	 *  Used to ensure that the correct version is sent to the client regardless of caching.
-	 * @param string $media The media for which this stylesheet has been defined.
+	 * @param string      $handle    Name of the stylesheet.
+	 * @param string|bool $src       Path to the stylesheet from the root directory of WordPress. Example: '/assets/style.css'.
+	 * @param array       $deps      Array of handles of any stylesheet that this stylesheet depends on.
+	 *                               (Stylesheets that must be loaded before this stylesheet.) Pass an empty array if there are no dependencies.
+	 * @param string|bool $ver       String specifying the stylesheet version number. Set to null to disable.
+	 *                               Used to ensure that the correct version is sent to the client regardless of caching.
+	 * @param string      $media     The media for which this stylesheet has been defined.
 	 */
 	wp_register_style(
-		'hamburg_child_style',
+		'hamburg-child-style',
 		get_stylesheet_directory_uri() . '/style' . $suffix . '.css',
-		array(),
-		'20130919',
+		array( 'style' ), // loads after main stylesheet from parent theme Hamburg
+		$theme_data->Version,
 		'screen'
 	);
 
-	// Enqueue a CSS style file
-	wp_enqueue_style( 'hamburg_child_style' );
+	// Enqueue child theme CSS.
+	wp_enqueue_style( 'hamburg-child-style' );
 }
+
+
+/**
+ * Enqueues a sample javascript file in the front-end.
+ *
+ * Will load after hamburg.js from parent theme Hamburg has loaded.
+ * To remove that dependency, pass an empty array() instead of array( 'hamburg-js' ).
+ *
+ * @since   02/09/2015
+ * @hooked  wp_enqueue_scripts
+ * @return  void
+ */
+function hamburg_child_add_javascript() {
+
+	// Get file suffix.
+	$suffix  = hamburg_child_min_suffix();
+
+	// Get theme-data.
+	$theme_data = wp_get_theme();
+
+	/**
+	 * Register javascript file.
+	 *
+	 * @param string      $handle    Name of the script. Should be unique.
+	 * @param string      $src       Path to the script from the WordPress root directory. Example: '/js/myscript.js'.
+	 * @param array       $deps      Optional. An array of registered script handles this script depends on. Set to false if there
+	 *                               are no dependencies. Default empty array.
+	 * @param string|bool $ver       Optional. String specifying script version number, if it has one, which is concatenated
+	 *                               to end of path as a query string. If no version is specified or set to false, a version
+	 *                               number is automatically added equal to current installed WordPress version.
+	 *                               If set to null, no version is added. Default 'false'. Accepts 'false', 'null', or 'string'.
+	 * @param bool        $in_footer Optional. Whether to enqueue the script before </head> or before </body>.
+	 *                               Default 'false'. Accepts 'false' or 'true'.
+	 */
+	wp_register_script(
+		'hamburg-child-js',
+		get_stylesheet_directory_uri() . '/assets/js/hamburg-child' . $suffix . '.js',
+		array( 'hamburg-js' ), // loads after hamburg.js from parent theme Hamburg
+		$theme_data->Version,
+		TRUE
+	);
+
+	// Enqueue child theme javascript.
+	wp_enqueue_script( 'hamburg-child-js' );
+}
+
 
 /**
  * Add color scheme to the default color schemes from theme Hamburg.
  * Remove the default color 'yellow' from settings.
  *
  * @since   09/19/2013
+ * @hooked  hamburg_color_schemes
  * @param   Array with each color and his data
  * @return  Array with data to each color on Customizer
  */
@@ -99,21 +188,4 @@ function hamburg_child_add_color_scheme( $schemes ) {
 	);
 
 	return $schemes;
-}
-
-
-
-add_filter( 'hamburg_site_footer_info', 'hamburg_child_custom_footer_text' );
-
-/**
- * Replace Hamburg theme footer text with custom text.
- *
- * @since 10/01/2013
- * @return string
- */
-function hamburg_child_custom_footer_text() {
-    return sprintf(
-    		'<p class="site-info">Custom footer here, including a <a href="%s" rel="nofollow">link</a>. (Edit this line in functions.php.)</p>',
-    		home_url( '/' )
-    		);
 }

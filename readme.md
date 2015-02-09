@@ -1,19 +1,13 @@
 # Hamburg Child Starter
 
-A child theme starter kit for WordPress.
+A child theme boilerplate for WordPress.
 
 ## Description
 This is a starter kit for a custom child theme. Child themes in WordPress enable you to override theme templates and stylesheets with your own customizations in a safe way. No need to touch an original theme file!
 
 This starter kit uses our own theme [Hamburg](http://marketpress.com/product/hamburg/) as the parent theme. Feel free to use it for your own projects, or hack it and create your own child theme starter kit.
 
-As a bonus for Hamburg users, we have added a second stylesheet which supports styling for WooCommerce elements. The child theme will now
-
-* check if WooCommerce is active;
-* if yes, load *style.plus.woo.css*;
-* if not, load the smaller *style.css*.
-
-Also, as in Hamburg and many other themes, minified stylesheets are loaded by default. To load the extended files, set `SCRIPT_DEBUG` to `TRUE` in your *wp-config.php*.
+Also, as in Hamburg and many other themes, minified stylesheets can be loaded by default. In order to load minified versions of stylesheets and scripts, visit functions.php and edit `hamburg_child_min_suffix()` as documented inline.
 
 ## Ressources
 
@@ -34,6 +28,13 @@ Also, as in Hamburg and many other themes, minified stylesheets are loaded by de
 [![MarketPress.com](/assets/img/mp-logo.png)](http://marketpress.com)
 
 ## Changelog
+
+### 1.2
+
+* Simplified stylesheets to use only one style.css (optionally .min).
+* Added opt-in for minified stylesheet.
+* Added sample javascript file.
+* Improved inline docs.
 
 ### 1.1
 
