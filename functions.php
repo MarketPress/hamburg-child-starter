@@ -53,7 +53,23 @@ function hamburg_child_add_stylesheets() {
 	 * when SCRIPT_DEBUG is NOT set to TRUE.
 	 */
 	$suffix  = class_exists( 'WooCommerce' ) ? '.plus.woo' : '';
-	$suffix .= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+
+	/**
+	 * The .min suffix for stylesheets and scripts.
+	 *
+	 * In order to provide a quick start, this child theme by default will load
+	 * regular style.css (whereas its parent theme Hamburg loads minified
+	 * versions of its stylesheets and scripts by default).
+	 *
+	 * If you want your child theme to default on minified stylesheets as well,
+	 * just uncomment line 72.
+	 * You can then temporarily switch back to unminified versions of the same
+	 * files by setting the constant SCRIPT_DEBUG to TRUE in your wp-config.php:
+	 * define( 'SCRIPT_DEBUG', TRUE );
+	 */
+
+	// Uncomment to load minified stylesheet by default
+	// $suffix .= defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 	/**
 	 * Register CSS style file.
