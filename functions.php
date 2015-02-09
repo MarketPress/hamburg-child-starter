@@ -32,7 +32,7 @@
 function hamburg_child_min_suffix( $suffix = '' ) {
 
 	// Uncomment to load minified stylesheet by default
-	$suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	// $suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
 
 	return $suffix;
 }
