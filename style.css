@@ -6,7 +6,7 @@
  * Author:      	MarketPress
  * Author URI:  	http://marketpress.com/
  * Contributors:	Inpsyde GmbH, @bueltge, @glueckpress
- * Version:     	1.1
+ * Version:     	1.2
  * Status:      	Stable
  * Text Domain:		theme_hamburg_child_textdomain
  * Tags:        	translation-ready, theme-options
@@ -14,8 +14,21 @@
  * License URI: 	http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
+
 /* =Color scheme Pink
------------------------------------------------ */
+-----------------------------------------------
+    The following sample styles will only have
+    any effect if you have opted into using
+    the pink sample color scheme.
+    To do so visit functions.php and edit
+    hamburg_child_add_stylesheets().
+    Then activate pink as the new color scheme
+    in the WordPress Customizer.
+    If you do not plan to use a color scheme
+    from your child theme, you can safely delete
+    all of the following CSS and add your own.
+*/
+
 /* 1. Pink background color */
 .color-scheme-pink [type="submit"],
 .js .color-scheme-pink .menu-toggle,
@@ -38,7 +51,23 @@
 .color-scheme-pink .tag-links a:hover,
 .color-scheme-pink .comments-link a:hover,
 .color-scheme-pink .comment-reply-link:hover,
-.color-scheme-pink .social-sharing-links a:hover {
+.color-scheme-pink .social-sharing-links a:hover,
+/* WooCommerce */
+.color-scheme-pink.woocommerce .onsale,
+.color-scheme-pink .flexslider .onsale,
+.color-scheme-pink .woocommerce-pagination li:hover a,
+.color-scheme-pink.woocommerce.archive .product .price > .amount,
+.color-scheme-pink.woocommerce.archive .product.sale .price del,
+.color-scheme-pink.woocommerce.archive .product.sale .price ins,
+.color-scheme-pink.woocommerce.archive .product .entry ~ .button:hover,
+.color-scheme-pink.woocommerce.archive .content-area .product:hover,
+.color-scheme-pink.woocommerce.archive .content-area .product .add_to_cart_button + .added_to_cart,
+.color-scheme-pink .has-chosen .chosen-container .chosen-results li.highlighted,
+.color-scheme-pink .widget.widget_layered_nav_filters,
+.color-scheme-pink .widget_price_filter .ui-slider-handle,
+.color-scheme-pink .widget.woocommerce .product_list_widget li a:hover > img,
+.color-scheme-pink div.pp_woocommerce .pp_previous:before,
+.color-scheme-pink div.pp_woocommerce .pp_next:before {
 	background-color: #cc5490;
 }
 
@@ -54,7 +83,10 @@
 .color-scheme-pink .site-nav-primary .menu > li ul a:hover,
 .color-scheme-pink .site-nav-primary .menu > li ul li:hover,
 .color-scheme-pink .site-nav-primary .menu > li ul .current-menu-item > a,
-.color-scheme-pink .mlp_language_box ul li.current a {
+.color-scheme-pink .mlp_language_box ul li.current a,
+/* WooCommerce */
+.color-scheme-pink .widget_price_filter .ui-slider-range,
+.color-scheme-pink .widget.widget_layered_nav_filters li:hover {
 	background-color: #7f2854;
 }
 
@@ -73,8 +105,14 @@
 .color-scheme-pink .entry-meta .date a:hover,
 .color-scheme-pink .entry-meta .author a:hover,
 .color-scheme-pink .backtotop span:before,
-.color-scheme-pink .entry-content ul > li:before {
+.color-scheme-pink .entry-content ul > li:before,
+/* WooCommerce */
+.color-scheme-pink.woocommerce.single-product .product_meta a:hover {
 	color: #cc5490;
+}
+/* WooCommerce */
+.color-scheme-pink.woocommerce.archive .product.sale .price del {
+	color: #7f2854;
 }
 
 /* Pink border colors */
@@ -83,11 +121,41 @@
 	border-color: #cc5490;
 }
 
+/* Pink background, white text color */
+/* WooCommerce */
+.color-scheme-pink.woocommerce-page .button.single_add_to_cart_button,
+.color-scheme-pink.woocommerce-page .button.checkout-button,
+.color-scheme-pink.woocommerce-checkout .button[name="woocommerce_checkout_place_order"],
+.color-scheme-pink .widget.woocommerce .button,
+.color-scheme-pink .widget_price_filter .price_slider_amount .button,
+.color-scheme-pink .woocommerce-checkout #payment .button,
+.color-scheme-pink.woocommerce-account .entry-content .woocommerce form .button,
+.color-scheme-pink.woocommerce.archive .product .price-tag {
+	background-color: #cc5490;
+	color: #fff;
+}
+
 /* Purple background colors, white text color */
 .color-scheme-pink .site-nav-primary .menu > .special > a,
 .color-scheme-pink .site-nav-primary .menu > li > a:focus,
 .color-scheme-pink .site-nav-primary .menu > li ul a:focus,
-.color-scheme-pink .site-nav-primary .menu > li.special ul {
+.color-scheme-pink .site-nav-primary .menu > li.special ul,
+/* WooCommerce */
+.color-scheme-pink .site-nav-primary .mini-cart a,
+.color-scheme-pink.woocommerce-page .button.single_add_to_cart_button:hover,
+.color-scheme-pink.woocommerce-page .button.checkout-button:hover,
+.color-scheme-pink.woocommerce-checkout .button[name="woocommerce_checkout_place_order"]:hover,
+.color-scheme-pink .widget.woocommerce .button:hover,
+.color-scheme-pink .widget_price_filter .price_slider_amount .button:hover,
+.color-scheme-pink .woocommerce-checkout #payment .button:hover,
+.color-scheme-pink.woocommerce-account .entry-content .woocommerce form .button:hover,
+.color-scheme-pink.woocommerce-page .button.single_add_to_cart_button:focus,
+.color-scheme-pink.woocommerce-page .button.checkout-button:focus,
+.color-scheme-pink.woocommerce-checkout .button[name="woocommerce_checkout_place_order"]:focus,
+.color-scheme-pink .widget.woocommerce .button:focus,
+.color-scheme-pink .widget_price_filter .price_slider_amount .button:focus,
+.color-scheme-pink .woocommerce-checkout #payment .button:focus,
+.color-scheme-pink.woocommerce-account .entry-content .woocommerce form .button:focus {
 	background-color: #e352e3;
 	color: #fff;
 }
@@ -100,7 +168,9 @@
 .color-scheme-pink .site-nav-primary .menu > li.special ul a:focus,
 .color-scheme-pink .site-nav-primary .menu > li.special ul li:hover,
 .color-scheme-pink .site-nav-primary .menu > li.special.current-menu-item > a,
-.color-scheme-pink .site-nav-primary .menu > li.special.current-menu-ancestor > a {
+.color-scheme-pink .site-nav-primary .menu > li.special.current-menu-ancestor > a,
+/* WooCommerce */
+.color-scheme-pink .site-nav-primary .mini-cart a:hover {
 	background-color: #a13aa1;
 }
 
