@@ -8,7 +8,7 @@
  * @author     marketpress.com
  */
 
-add_action( 'after_setup_theme', 'hamburg_child_setup' );
+
 /**
  * Sets up theme defaults and registers support for various WordPress features
  * of Hamburg Child Theme.
@@ -28,9 +28,13 @@ function hamburg_child_setup() {
 	// Enqueue child theme's styles.css for front-end.
 	add_action( 'wp_enqueue_scripts', 'hamburg_child_add_stylesheets' );
 
-	// Change default color scheme
-	add_filter( get_stylesheet() . '_color_schemes', 'hamburg_child_add_color_scheme' );
+	// Uncomment to remove yellow color-scheme and add pink.
+	// add_filter( get_stylesheet() . '_color_schemes', 'hamburg_child_add_color_scheme' );
+
+	// Adds a custom footer line.
+	add_filter( 'hamburg_site_footer_info', 'hamburg_child_custom_footer_text' );
 }
+add_action( 'after_setup_theme', 'hamburg_child_setup' );
 
 
 /**
@@ -42,9 +46,9 @@ function hamburg_child_setup() {
  */
 function hamburg_child_add_stylesheets() {
 
-	// If no pink is used return
-	if ( 'pink' !== get_theme_mod( 'color_scheme' ) )
-		return NULL;
+	// Uncomment to only load stylesheet when color-scheme pink is active.
+	// if ( 'pink' !== get_theme_mod( 'color_scheme' ) )
+	// 	return NULL;
 
 	/**
 	 * Suffix for minified script/stylesheet versions.
@@ -94,6 +98,7 @@ function hamburg_child_add_stylesheets() {
 	wp_enqueue_style( 'hamburg_child_style' );
 }
 
+
 /**
  * Add color scheme to the default color schemes from theme Hamburg.
  * Remove the default color 'yellow' from settings.
@@ -117,9 +122,6 @@ function hamburg_child_add_color_scheme( $schemes ) {
 	return $schemes;
 }
 
-
-
-add_filter( 'hamburg_site_footer_info', 'hamburg_child_custom_footer_text' );
 
 /**
  * Replace Hamburg theme footer text with custom text.
