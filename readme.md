@@ -7,7 +7,7 @@ This is a starter kit for a custom child theme. Child themes in WordPress enable
 
 This starter kit uses our own theme [Hamburg](http://marketpress.com/product/hamburg/) as the parent theme. Feel free to use it for your own projects, or hack it and create your own child theme starter kit.
 
-Also, as in Hamburg and many other themes, minified stylesheets can be loaded by default. In order to load minified versions of stylesheets and scripts, visit functions.php and edit `hamburg_child_min_suffix()` as documented inline.
+Also, as in Hamburg and many other themes, minified stylesheets and scripts can be loaded by default. In order to load minified versions of stylesheets and scripts, visit functions.php and set a filter as documented inline.
 
 ## Ressources
 
@@ -28,6 +28,10 @@ Also, as in Hamburg and many other themes, minified stylesheets can be loaded by
 [![MarketPress.com](/assets/img/mp-logo.png)](http://marketpress.com)
 
 ## Changelog
+
+### 1.2.1
+
+* Added filter for simplified handling of .min suffix for stylesheet and script.
 
 ### 1.2
 
