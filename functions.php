@@ -85,7 +85,7 @@ function hamburg_child_custom_footer_text() {
 function hamburg_child_add_stylesheet() {
 
 	// Get file suffix.
-	$suffix  = apply_filters( 'hamburg_child_min_suffix', '__return_empty_string' );
+	$suffix  = apply_filters( 'hamburg_child_min_suffix', __return_empty_string() );
 
 	// Get theme-data.
 	$theme_data = wp_get_theme();
