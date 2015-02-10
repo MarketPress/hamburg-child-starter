@@ -12,39 +12,32 @@
 
 
 /**
- * The .min suffix for stylesheets and scripts.
- *
- * In order to provide a quick start, this child theme by default will load
- * regular CSS and javascript files (whereas its parent theme Hamburg loads
- * minified versions of its stylesheets and scripts by default).
- *
- * If you want your child theme to default on minified stylesheets as well,
- * just uncomment the line where SCRIPT_DEBUG is defined.
- * Don’t forget to actually add applicable .min files to your child theme first!
- *
- * You can then temporarily switch back to unminified versions of the same
- * files by setting the constant SCRIPT_DEBUG to TRUE in your wp-config.php:
- * define( 'SCRIPT_DEBUG', TRUE );
- *
- * @since   02/09/2015
- * @return void
- */
-function hamburg_child_min_suffix( $suffix = '' ) {
-
-	// Uncomment to load minified stylesheet by default
-	// $suffix = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
-
-	return $suffix;
-}
-
-
-/**
  * Sets up theme defaults, enqeues stylesheet and scripts.
  *
  * @since   09/19/2013
  * @return  void
  */
 function hamburg_child_setup() {
+
+	/* The .min suffix for stylesheets and scripts.
+	 *
+	 * In order to provide a quick start, this child theme by default will load
+	 * regular CSS and javascript files (whereas its parent theme loads
+	 * minified versions of its stylesheets and scripts by default).
+	 *
+	 * If you want your child theme to default on minified stylesheets and scripts,
+	 * set the following filter:
+	 *
+	 * if( function_exists( 'hamburg_min_suffix' ) ) {
+	 *     add_filter( 'hamburg_child_min_suffix', 'hamburg_min_suffix' );
+	 * }
+	 *
+	 * Don’t forget to actually add applicable .min files to your child theme first!
+	 *
+	 * You can then temporarily switch back to unminified versions of the same
+	 * files by setting the constant SCRIPT_DEBUG to TRUE in your wp-config.php:
+	 * define( 'SCRIPT_DEBUG', TRUE );
+	 */
 
 	// Loads the child theme's translated strings
 	load_child_theme_textdomain( 'theme_hamburg_child_textdomain', get_stylesheet_directory() . '/languages' );
@@ -92,21 +85,14 @@ function hamburg_child_custom_footer_text() {
 function hamburg_child_add_stylesheet() {
 
 	// Get file suffix.
-	$suffix  = hamburg_child_min_suffix();
+	$suffix  = apply_filters( 'hamburg_child_min_suffix', '__return_empty_string' );
 
 	// Get theme-data.
 	$theme_data = wp_get_theme();
 
-	/**
-	 * Register CSS style file.
+	/** Register CSS style file.
 	 *
-	 * @param string      $handle    Name of the stylesheet.
-	 * @param string|bool $src       Path to the stylesheet from the root directory of WordPress. Example: '/assets/style.css'.
-	 * @param array       $deps      Array of handles of any stylesheet that this stylesheet depends on.
-	 *                               (Stylesheets that must be loaded before this stylesheet.) Pass an empty array if there are no dependencies.
-	 * @param string|bool $ver       String specifying the stylesheet version number. Set to null to disable.
-	 *                               Used to ensure that the correct version is sent to the client regardless of caching.
-	 * @param string      $media     The media for which this stylesheet has been defined.
+	 * @link https://developer.wordpress.org/reference/functions/wp_register_script/
 	 */
 	wp_register_style(
 		'hamburg-child-style',
@@ -134,24 +120,14 @@ function hamburg_child_add_stylesheet() {
 function hamburg_child_add_javascript() {
 
 	// Get file suffix.
-	$suffix  = hamburg_child_min_suffix();
+	$suffix  = apply_filters( 'hamburg_child_min_suffix', '__return_empty_string' );
 
 	// Get theme-data.
 	$theme_data = wp_get_theme();
 
-	/**
-	 * Register javascript file.
+	/** Register javascript file.
 	 *
-	 * @param string      $handle    Name of the script. Should be unique.
-	 * @param string      $src       Path to the script from the WordPress root directory. Example: '/js/myscript.js'.
-	 * @param array       $deps      Optional. An array of registered script handles this script depends on. Set to false if there
-	 *                               are no dependencies. Default empty array.
-	 * @param string|bool $ver       Optional. String specifying script version number, if it has one, which is concatenated
-	 *                               to end of path as a query string. If no version is specified or set to false, a version
-	 *                               number is automatically added equal to current installed WordPress version.
-	 *                               If set to null, no version is added. Default 'false'. Accepts 'false', 'null', or 'string'.
-	 * @param bool        $in_footer Optional. Whether to enqueue the script before </head> or before </body>.
-	 *                               Default 'false'. Accepts 'false' or 'true'.
+	 * @link https://developer.wordpress.org/reference/functions/wp_register_script/
 	 */
 	wp_register_script(
 		'hamburg-child-js',
