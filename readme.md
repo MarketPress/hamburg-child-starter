@@ -22,12 +22,18 @@ Also, as in Hamburg and many other themes, minified stylesheets and scripts can 
 * [@bueltge](https://github.com/bueltge)
 * [@glueckpress](https://github.com/glueckpress)
 * [@toscho](https://github.com/toscho)
+* [@tinabillinger](https://github.com/tinabillinger)
+* [@twern](https://github.com/twern)
 
 **Brought to you by**
 
 [![MarketPress.com](/assets/img/mp-logo.png)](http://marketpress.com)
 
 ## Changelog
+
+### 1.2.2
+
+* removed filter and function hamburg_child_custom_footer_text
 
 ### 1.2.1
 

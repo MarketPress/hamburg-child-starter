@@ -6,7 +6,7 @@
  *
  * @package    WordPress
  * @subpackage Hamburg_Child
- * @version    02/09/2015
+ * @version    12/17/2015
  * @author     marketpress.com
  */
 
@@ -42,9 +42,6 @@ function hamburg_child_setup() {
 	// Loads the child theme's translated strings
 	load_child_theme_textdomain( 'theme_hamburg_child_textdomain', get_stylesheet_directory() . '/languages' );
 
-	// Adds a custom footer line.
-	add_filter( 'hamburg_site_footer_info', 'hamburg_child_custom_footer_text' );
-
 	// Enqueue child theme's styles.css for front-end.
 	add_action( 'wp_enqueue_scripts', 'hamburg_child_add_stylesheet' );
 
@@ -55,21 +52,6 @@ function hamburg_child_setup() {
 	// add_filter( get_stylesheet() . '_color_schemes', 'hamburg_child_add_color_scheme' );
 }
 add_action( 'after_setup_theme', 'hamburg_child_setup' );
-
-
-/**
- * Replace Hamburg theme footer text with custom text.
- *
- * @since   10/01/2013
- * @hooked  hamburg_site_footer_info
- * @return  string
- */
-function hamburg_child_custom_footer_text() {
-    return sprintf(
-    		'<p class="site-info">Custom footer here, including a <a href="%s" rel="nofollow">link</a>. (Edit this line in functions.php.)</p>',
-    		home_url( '/' )
-    		);
-}
 
 
 /**
