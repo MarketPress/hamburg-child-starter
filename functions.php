@@ -7,7 +7,7 @@
  * @package    WordPress
  * @subpackage Hamburg_Child
  * @version    12/17/2015
- * @author     marketpress.com
+ * @author     MarketPress
  */
 
 

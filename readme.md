@@ -13,23 +13,22 @@ Also, as in Hamburg and many other themes, minified stylesheets and scripts can 
 
 * [The WordPress Codex on Child Themes](http://codex.wordpress.org/Child_Themes)
 * [Hamburg Theme Documentation](http://marketpress.com/documentation/theme-hamburg/)
-* [Child-Theme erstellen und anpassen (DE)](http://make.marketpress.com/themes/child-themes-erstellen-anpassen/)
+* [Child-Theme erstellen und anpassen (DE)](https://marketpress.de/2013/child-theme-erstellen-anpassen/)
 * [Tutorial on Child Themes (EN)](http://marketpress.com/2013/creating-customizing-child-themes)
 
 ## Contributors
 
-* [@inpsyde](https://github.com/inpsyde)
-* [@bueltge](https://github.com/bueltge)
-* [@glueckpress](https://github.com/glueckpress)
-* [@toscho](https://github.com/toscho)
-* [@tinabillinger](https://github.com/tinabillinger)
-* [@twern](https://github.com/twern)
+* [@MarketPress](https://github.com/MarketPress)
 
 **Brought to you by**
 
 [![MarketPress.com](/assets/img/mp-logo.png)](http://marketpress.com)
 
 ## Changelog
+
+### 1.2.3
+
+* fixed license infos
 
 ### 1.2.2
 
