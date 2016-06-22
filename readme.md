@@ -5,7 +5,7 @@ A child theme boilerplate for WordPress.
 ## Description
 This is a starter kit for a custom child theme. Child themes in WordPress enable you to override theme templates and stylesheets with your own customizations in a safe way. No need to touch an original theme file!
 
-This starter kit uses our own theme [Hamburg](http://marketpress.com/product/hamburg/) as the parent theme. Feel free to use it for your own projects, or hack it and create your own child theme starter kit.
+This starter kit uses our own theme [Hamburg](https://marketpress.com/shop/themes/muenchen/) as the parent theme. Feel free to use it for your own projects, or hack it and create your own child theme starter kit.
 
 Also, as in Hamburg and many other themes, minified stylesheets and scripts can be loaded by default. In order to load minified versions of stylesheets and scripts, visit functions.php and set a filter as documented inline.
 
@@ -22,7 +22,7 @@ Also, as in Hamburg and many other themes, minified stylesheets and scripts can 
 
 **Brought to you by**
 
-[![MarketPress.com](/assets/img/mp-logo.png)](http://marketpress.com)
+[![MarketPress.com](/assets/img/mp-logo.png)](https://marketpress.com)
 
 ## Changelog
 
